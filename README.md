@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/while-true-do/ansible-role-yum.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-yum)
+
 # Ansible Role: yum 
 | A role to configure yum
 
