@@ -1,0 +1,17 @@
+---
+# yum configuration
+yum_packages: [ 'yum', 'yum-langpacks', 'yum-plugin-fastestmirror' ]
+
+yum_cachedir: '/var/cache/yum/$basearch/$releasever'
+yum_keepcache: '0'
+yum_debuglevel: '2'
+yum_logile: '/var/log/yum.log'
+yum_exactarch: '1'
+yum_obsoletes: '1'
+yum_gpgcheck: '1'
+yum_plugins: '1'
+yum_installonly_limit: '5'
+yum_bugtracker_url: 'http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_report_page.php?category=yum'
+yum_distroverpkg: 'centos-release'
+yum_clean_requirements_on_remove: 'yes'
+yum_metadata_expire: '90m'

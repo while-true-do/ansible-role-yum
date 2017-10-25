@@ -1,0 +1,16 @@
+# {{ ansible_managed }}
+
+[main]
+cachedir={{ yum_cachedir }}
+keepcache={{ yum_keepcache }}
+debuglevel={{ yum_debuglevel }}
+logfile={{ yum_logfile }}
+exactarch={{ yum_exactarch }}
+obsoletes={{ yum_obsolotes }}
+gpgcheck={{ yum_gpgcheck }}
+plugins={{ yum_plugins }}
+installonly_limit={{ yum_installonly_limit }}
+bugtracker_url={{ bugtracker_url }}
+distroverpkg={{ distroverpkg }}
+clean_requirements_on_remove={{ yum_clean_requirements_on_remove }}
+metadata_expire={{ yum_metadata_expire }}

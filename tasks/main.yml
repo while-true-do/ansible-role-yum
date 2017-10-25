@@ -1,0 +1,20 @@
+---
+- name: Install yum packages
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ yum_packages }}"
+  tags:
+    - yum
+    - package-manager
+
+- name: Configure yum
+  template:
+    src: yum.conf.j2
+    dest: /etc/yum.conf
+    owner: root
+    group: root
+    mode: 0644
+  tags:
+    - yum
+    - config
