@@ -35,7 +35,7 @@ yum_packages: [ 'yum', 'yum-langpacks', 'yum-plugin-fastestmirror' ]
 yum_cachedir: '/var/cache/yum/$basearch/$releasever'
 yum_keepcache: '0'
 yum_debuglevel: '2'
-yum_logile: '/var/log/yum.log'
+yum_logfile: '/var/log/yum.log'
 yum_exactarch: '1'
 yum_obsoletes: '1'
 yum_gpgcheck: '1'
