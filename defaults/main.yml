@@ -1,6 +1,6 @@
 ---
 # yum configuration
-yum_packages: [ 'yum', 'yum-langpacks', 'yum-plugin-fastestmirror' ]
+yum_packages: [ 'yum', 'yum-utils', 'deltarpm', 'yum-langpacks', 'yum-plugin-fastestmirror' ]
 
 yum_cachedir: '/var/cache/yum/$basearch/$releasever'
 yum_keepcache: '0'
