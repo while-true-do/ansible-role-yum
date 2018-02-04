@@ -19,16 +19,15 @@ install:
   # Check ansible version
   - ansible --version
 
-  # Create ansible.cfg with correct roles_path
-  - printf '[defaults]\nroles_path=../' >ansible.cfg
-
   # Link github repo to ansible-galaxy name
   - ln -s  $PWD ../while-true-do.yum
 
 # Run the tests
 script:
-  - chmod +x tests/test.sh
-  - tests/test.sh
+  - chmod +x tests/test-ansible.sh
+  - tests/test-ansible.sh
+  - chmod +x tests/test-spelling.sh
+  - tests/test-spelling.sh
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
