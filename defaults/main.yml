@@ -1,17 +1,17 @@
 ---
 # yum configuration
-yum_packages: [ 'yum', 'yum-utils', 'deltarpm', 'yum-langpacks', 'yum-plugin-fastestmirror' ]
+wtd_yum_packages: [ 'yum', 'yum-utils', 'deltarpm', 'yum-langpacks', 'yum-plugin-fastestmirror' ]
 
-yum_cachedir: '/var/cache/yum/$basearch/$releasever'
-yum_keepcache: '0'
-yum_debuglevel: '2'
-yum_logfile: '/var/log/yum.log'
-yum_exactarch: '1'
-yum_obsoletes: '1'
-yum_gpgcheck: '1'
-yum_plugins: '1'
-yum_installonly_limit: '5'
-yum_bugtracker_url: 'http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_report_page.php?category=yum'
-yum_distroverpkg: 'centos-release'
-yum_clean_requirements_on_remove: 'yes'
-yum_metadata_expire: '90m'
+wtd_yum_cachedir: '/var/cache/yum/$basearch/$releasever'
+wtd_yum_keepcache: '0'
+wtd_yum_debuglevel: '2'
+wtd_yum_logfile: '/var/log/yum.log'
+wtd_yum_exactarch: '1'
+wtd_yum_obsoletes: '1'
+wtd_yum_gpgcheck: '1'
+wtd_yum_plugins: '1'
+wtd_yum_installonly_limit: '5'
+wtd_yum_bugtracker_url: 'http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_report_page.php?category=yum'
+wtd_yum_distroverpkg: 'centos-release'
+wtd_yum_clean_requirements_on_remove: 'yes'
+wtd_yum_metadata_expire: '90m'
