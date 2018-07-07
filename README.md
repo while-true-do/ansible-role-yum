@@ -9,16 +9,16 @@ Configuring and ensuring a proper behaviour of yum on CentOS/RedHat systems is m
 
 ## Installation
 
-Install from [Ansible Galaxy](https://galaxy.ansible.com/while-true-do/yum)
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do/yum)
 
 ```
-ansible-galaxy install while-true-do.yum
+ansible-galaxy install while_true_do.yum
 ```
 
 Install from [Github](https://github.com/while-true-do/ansible-role-yum)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-yum.git while-true-do.yum
+git clone https://github.com/while-true-do/ansible-role-yum.git while_true_do.yum
 ```
 
 ## Requirements
@@ -57,7 +57,7 @@ Simple Example:
 ```
 - hosts: servers 
   roles:
-    - { role: while-true-do.yum }
+    - { role: while_true_do.yum }
 ```
 
 ## Testing
