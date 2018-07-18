@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/while-true-do/ansible-role-yum.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-yum)
 
-# Ansible Role: yum 
+# Ansible Role: yum
 | A role to configure yum
 
 ## Motivation
@@ -55,7 +55,7 @@ wtd_yum_metadata_expire: '90m'
 Simple Example:
 
 ```
-- hosts: servers 
+- hosts: servers
   roles:
     - { role: while_true_do.yum }
 ```
