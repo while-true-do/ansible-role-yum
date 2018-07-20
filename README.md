@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/while-true-do/ansible-role-yum.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-yum)
 
-# Ansible Role: yum 
+# Ansible Role: yum
 | A role to configure yum
 
 ## Motivation
@@ -9,16 +9,16 @@ Configuring and ensuring a proper behaviour of yum on CentOS/RedHat systems is m
 
 ## Installation
 
-Install from [Ansible Galaxy](https://galaxy.ansible.com/while-true-do/yum)
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do/yum)
 
 ```
-ansible-galaxy install while-true-do.yum
+ansible-galaxy install while_true_do.yum
 ```
 
 Install from [Github](https://github.com/while-true-do/ansible-role-yum)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-yum.git while-true-do.yum
+git clone https://github.com/while-true-do/ansible-role-yum.git while_true_do.yum
 ```
 
 ## Requirements
@@ -55,9 +55,9 @@ wtd_yum_metadata_expire: '90m'
 Simple Example:
 
 ```
-- hosts: servers 
+- hosts: servers
   roles:
-    - { role: while-true-do.yum }
+    - { role: while_true_do.yum }
 ```
 
 ## Testing
