@@ -25,6 +25,7 @@ git clone https://github.com/while-true-do/ansible-role-yum.git while_true_do.yu
 
 Used Modules:
 
+-   [command_module](https://docs.ansible.com/ansible/latest/modules/command_module.html)
 -   [package_module](https://docs.ansible.com/ansible/latest/modules/package_module.html)
 -   [template_module](https://docs.ansible.com/ansible/latest/modules/template_module.html)
 
