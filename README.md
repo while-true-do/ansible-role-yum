@@ -23,7 +23,11 @@ git clone https://github.com/while-true-do/ansible-role-yum.git while_true_do.yu
 
 ## Requirements
 
-None.
+Used Modules:
+
+-   [command_module](https://docs.ansible.com/ansible/latest/modules/command_module.html)
+-   [package_module](https://docs.ansible.com/ansible/latest/modules/package_module.html)
+-   [template_module](https://docs.ansible.com/ansible/latest/modules/template_module.html)
 
 ## Dependencies
 
@@ -31,7 +35,7 @@ None.
 
 ## Role Variables
 
-```
+```yaml
 # defaults/main.yml
 wtd_yum_packages: [ 'yum', 'yum-utils', 'deltarpm', 'yum-langpacks', 'yum-plugin-fastestmirror' ]
 
@@ -54,7 +58,7 @@ wtd_yum_metadata_expire: '90m'
 
 Simple Example:
 
-```
+```yaml
 - hosts: servers
   roles:
     - { role: while_true_do.yum }
@@ -67,8 +71,9 @@ All tests are located in [test directory](./tests/).
 Basic testing:
 
 ```
-bash ./tests/test-spelling.sh
 bash ./tests/test-ansible.sh
+bash ./tests/test-spelling.sh
+bash ./tests/test-whitespace.sh
 ```
 
 ## Contribute / Bugs
@@ -77,6 +82,7 @@ Thank you so much for considering to contribute. Every contribution helps us.
 We are really happy, when somebody is joining the hard work. Please have a look
 at the links first.
 
+-   [Code of Conduct](./docs/CODE_OF_CONDUCT.md)
 -   [Contribution Guidelines](./docs/CONTRIBUTING.md)
 -   [Create an issue or Request](https://github.com/while-true-do/ansible-role-yum/issues)
 -   [See who was contributing already](https://github.com/while-true-do/ansible-role-yum/graphs/contributors)
@@ -87,6 +93,6 @@ This work is licensed under a [BSD License](https://opensource.org/licenses/BSD-
 
 ## Author Information
 
-Blog: [blog.while-true-do.org](https://blog.while-true-do.org)
+Site: [while-true-do.org](https://while-true-do.org)
 
 Mail: [hello@while-true-do.org](mailto:hello@while-true-do.org)

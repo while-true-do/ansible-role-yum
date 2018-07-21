@@ -1,1 +1,7 @@
 ---
+# handlers/main.yml for yum
+
+- name: Cleanup yum metadata
+  command: yum clean metadata
+  args:
+    warn: no
