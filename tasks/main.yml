@@ -6,6 +6,7 @@
   tags:
     - yum
     - package-manager
+  become: yes
 
 - name: Configure yum
   template:
@@ -17,3 +18,4 @@
   tags:
     - yum
     - config
+  become: yes
